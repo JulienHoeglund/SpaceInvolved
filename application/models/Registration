@@ -1,0 +1,44 @@
+<?php 
+class Model_InscriptionUtilisateur extends CI_Model
+{
+	public function __construct()
+	{
+		$this->load->database();
+	} 
+	public function insert($user)
+	{
+		if(isset($user))
+		{
+			$this->db->insert('utilisateurs',$user);
+
+		}
+	}
+	public function checkLogin($str)
+	{
+		if($this->db->simple_query('SELECT login FROM users
+			WHERE login='.$str))
+		{
+			return FALSE;
+		}
+		else
+		{
+			return TRUE;
+		}
+		
+	}
+	public function verifMail($str)
+	{
+		if($this->db->simple_query('SELECT mail FROM utilisateurs
+			WHERE mail='.$str))
+		{
+			return FALSE;
+		}
+		else
+		{
+			return TRUE;
+		}
+	}
+
+	
+}
+?>
