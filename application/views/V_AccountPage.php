@@ -24,6 +24,7 @@
           <h4>Chapters</h3>
           <br>
           <ul>
+            <li> <a href="<?php echo base_url() ?>Welcome/dispatch/1">Link</a></li>
             <li><a href="<?php echo site_url('Welcome/dispatch/1') ?>">Planets/Exoplanets</a></li>
             <li><a href="<?php echo site_url('Welcome/dispatch/2') ?>">Space habitats</a></li>
             <li><a href="<?php echo site_url('Welcome/dispatch/3') ?>">Space robots</a></li>

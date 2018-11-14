@@ -1,10 +1,15 @@
 body{
-    background-color: #001f3f;
+	
+    background-color:  #222831;
 }
 #titleText{
 	color:white;	
     font-family: myFirstFont;
     src: url(sansation_light.woff);
+    margin-bottom:-20px;
+}
+hr{
+	border-color:white;
 }
 label{
 	color:white;
@@ -12,6 +17,47 @@ label{
 h1,h2,h3,h4,p,h1,a{
 	color:white;
 }
+p{
+	color:black;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align:justify;
+}
+.navbar{
+	background-color:white;
+}
 a{
 	text-decoration: underline;
 }
+
+#disclaimer-title{
+	color:#FF4136;
+}
+#subtitle{
+	color: #cacfd2 ;
+}
+.reg-login{
+	background-color:  #2e4053;
+	margin-top:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius: 5px;
+}
+.sitemap{
+	background-color: #393e46;
+}
+.content{
+	background-color: #eeeeee;
+
+}
+.sideTab{
+	background-color: #393e46;
+
+}
+.background{
+	background-color: #222831;
+}
+ #content-title{
+ 	color:black;
+ }
+

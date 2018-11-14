@@ -2,8 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 	
 class Welcome extends CI_Controller {
-	function __construct() {
-		parent::__construct();
+	public function __construct() {
+	    parent::__construct();
 	}
 	public function login() {
 		$this->load->model('M_Login');
@@ -38,8 +38,8 @@ class Welcome extends CI_Controller {
 	public function index() {
 		$this->load->model('M_Registration');
 		$this->form_validation->set_rules('username', 'username', 'trim|required|min_length[5]|max_length[20]');
-		$this->form_validation->set_rules('password', 'Password', 'required|matches[passconf]', array('required' => 'You must provide a %s.'));
-		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'required');
+		$this->form_validation->set_rules('password', 'Password', 'required|matches[passconf]|min_length[5]|max_length[20]', array('required' => 'You must provide a %s.'));
+		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'trim');
 		$this->form_validation->set_rules('email', 'Email', 'required');
 		
 		$data = array(
